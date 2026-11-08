@@ -19,12 +19,17 @@ fn main() -> eframe::Result {
                     opts.page = p;
                 }
             }
+            "-V" | "--version" => {
+                println!("iscsi-manager {}", env!("CARGO_PKG_VERSION"));
+                return Ok(());
+            }
             "-h" | "--help" => {
                 println!(
                     "iSCSI Manager — manage iSCSI storage connections on Ubuntu Desktop\n\n\
                      Options:\n  --demo                 show a pretend storage network\n  \
                      --page <name>          start on connections, targets, discover, computer or activity\n  \
-                     --screenshot <file>    draw ~120 frames, save the window as PNG and exit"
+                     --screenshot <file>    draw ~120 frames, save the window as PNG and exit\n  \
+                     --version              print the version and exit"
                 );
                 return Ok(());
             }

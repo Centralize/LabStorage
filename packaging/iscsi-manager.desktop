@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=iSCSI Manager
+GenericName=Network Storage Connections
+Comment=Find, connect and manage iSCSI network storage
+Exec=iscsi-manager
+Icon=iscsi-manager
+Terminal=false
+Categories=System;
+Keywords=iscsi;san;nas;storage;target;initiator;disk;network;
+StartupWMClass=iscsi-manager
