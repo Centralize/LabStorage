@@ -1,0 +1,13 @@
+[package]
+name = "iscsi-manager"
+version = "0.1.0"
+edition = "2021"
+description = "A desktop tool to find, connect and manage iSCSI network storage on Ubuntu Desktop"
+
+[dependencies]
+eframe = "0.37"
+egui = "0.37"
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[profile.release]
+opt-level = 2
